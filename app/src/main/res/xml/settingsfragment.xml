@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="categoryOne"
+        android:title="General">
+
+        <Preference
+            android:key="preflos"
+            android:title="Activity"
+            android:summary="跳转到第二界面">
+
+            <intent android:action="android.intent.action.sec"/>
+                    <!--android:targetPackage="com.sasin.mypreference_pzpapplication"-->
+                    <!--android:targetClass="com.sasin.mypreference_pzpapplication.SecondActivity"/>-->
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="categoryTwo"
+        android:title="跳转">
+
+        <EditTextPreference
+            android:key="@string/dialog"
+            android:title="dialog"
+            android:summary="弹出dialog"/>
+            <!--android:dialogLayout="@layout/dialog"/>-->
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
