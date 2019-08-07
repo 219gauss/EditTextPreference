@@ -10,10 +10,9 @@
             android:id="@+id/text"
             android:text="Ip"/>
 
-        <EditText
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/edittext"
-            android:ems="5"/>
+            android:id="@+id/edittext" />
 
 </LinearLayout>

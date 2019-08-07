@@ -20,12 +20,34 @@
         android:key="categoryTwo"
         android:title="跳转">
 
-        <EditTextPreference
+        <com.sasin.mypreference_pzpapplication.MyEditTextPreference
             android:key="@string/dialog"
             android:title="dialog"
-            android:summary="弹出dialog"/>
+            android:summary="弹出dialog" />
             <!--android:dialogLayout="@layout/dialog"/>-->
 
     </PreferenceCategory>
+
+
+    <PreferenceScreen
+        android:key="button_cfu_setting_key"
+        android:persistent="false"
+        android:title="跳转测试">
+
+        <com.sasin.mypreference_pzpapplication.MyEditTextPreference
+            android:autoText="false"
+            android:dialogMessage="dilog信息"
+            android:dialogTitle="dialog标题"
+            android:key="test"
+            android:persistent="false"
+            android:singleLine="true"
+            android:title="测试1" />
+
+        <PreferenceScreen
+            android:key="button_cfu_deact_key"
+            android:title="测试2"/>
+
+    </PreferenceScreen>
+
 
 </PreferenceScreen>
